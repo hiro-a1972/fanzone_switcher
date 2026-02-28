@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Fanzone Switcher for DAZN",
+  "version": "1.0.0",
+  "description": "Switch Fanzone on dazn.com",
+  "permissions": ["scripting"],
+  "host_permissions": [
+    "https://www.dazn.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.dazn.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
