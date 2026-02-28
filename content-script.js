@@ -39,7 +39,13 @@ function createToggleButton() {
   const span = document.createElement('span');
   span.textContent = hidden ? 'Fanzone' : 'Hide';
   // rotate text 180deg to invert orientation
-  span.style.display = 'inline-block';
+  span.style.display = 'flex';
+  span.style.alignItems = 'center';
+  span.style.justifyContent = 'center';
+  span.style.width = '100%';
+  span.style.height = '100%';
+  span.style.margin = '0';
+  span.style.lineHeight = 'normal';
   span.style.transform = 'rotate(180deg)';
   btn.appendChild(span);
 
